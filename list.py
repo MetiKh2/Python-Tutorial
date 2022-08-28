@@ -37,3 +37,29 @@ while i < len(list1):
     print(list1[i])
     i=i+1
 print(list1)
+
+
+#pt3
+
+# newList=[expression for item in iterable if condition==True]
+def myFunc(n):
+    return abs(n-50)
+
+fruits=['banana','apple','Orange','cherry','Kiwi','pineapple','mango']
+numbers=[100,50,65,40,23]
+numbers2=[1,3,6]
+fruits.sort(key=str.lower)
+fruits.reverse()
+numbers.sort(key=myFunc)
+
+
+# fruits2=fruits.copy()
+# fruits2=list(fruits)
+
+for x in numbers:
+    numbers2.append(x)
+print(numbers2)
+
+# print(numbers+numbers2)
+# print(fruits)
+# print(numbers)
